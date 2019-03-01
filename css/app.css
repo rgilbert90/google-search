@@ -1,0 +1,241 @@
+body {
+  background-color: #f6f6f6;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-family: 'Linux Libertine','Georgia','Times',serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 160px auto;
+  grid-template-rows: 85px auto;
+  background: linear-gradient(white, #f6f6f6 8%);
+
+}
+
+#background-gradient {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  /* background: linear-gradient(white 10%, #f6f6f6 100%); */
+}
+
+/* #background-nav-gradient {
+background: linear-gradient(white 50%, #f6f6f6);
+} */
+
+.left-nav {
+
+  margin-left: 20px;
+  font-size: .75em;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  line-height: 1.5em;
+  padding-top: 15px;
+
+}
+
+.personal-nav {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  }
+
+.top-section {
+  grid-column: 2;
+  grid-row: 1 / span 1;
+  /* background: white; */
+  
+}
+
+.personal-nav-buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+#usericon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Cg fill=%22%2354595d%22%3E %3Cpath d=%22M10 11c-5.92 0-8 3-8 5v3h16v-3c0-2-2.08-5-8-5z%22/%3E %3Ccircle cx=%2210%22 cy=%225.5%22 r=%224.5%22/%3E %3C/g%3E %3C/svg%3E");
+  background-repeat: no-repeat;
+  padding-left: 20px !important;
+
+}
+.personal-nav-buttons li {
+  display: inline;
+  color: rgb(84, 89, 93);
+  margin: 0 4px;
+  font-size: .75em;
+  line-height: 1.16em;
+  
+  
+}
+
+.top-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* background-image: url(https://en.wikipedia.org/w/skins/Vector/images/tab-normal-fade.png?1cc52);
+  background-position: bottom left;
+  background-repeat: repeat-x; */
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to top, 
+      rgb(95, 185, 245),
+      white 50%
+    )50;
+
+}
+
+/* 
+Gradient top: #FBFAFB
+Gradient bottom: #E1EEF7
+*/
+
+.top-section li {
+  font-size: .82em;
+  line-height: 1.16em;
+  margin-bottom: -1px;
+  /* background-image: url(https://en.wikipedia.org/w/skins/Vector/images/tab-normal-fade.png?1cc52);
+  background-position: bottom;
+  background-repeat: repeat-x; */
+  background: linear-gradient(to top, #E1EEF7, #FBFAFB);
+  padding: 1em .5em .5em .5em;
+  /* padding-top: 50px; */
+  float: left;
+  border-width: 1px;
+  border-top: 0px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to top, 
+      rgb(126, 188, 230),
+      white
+    )1;
+
+
+}
+
+#selected-tab  {
+  background: linear-gradient(to top, white, #FBFAFB);
+  border-bottom-width: 0px;
+  position: relative;
+  bottom: -1px;
+}
+
+.main-section {
+  grid-column: 2;
+  grid-row: 2 / span 1;
+  border-left: solid .5px rgb(126, 188, 230);
+  background: white;
+  padding: 24px;
+
+  /* background: white; */
+}
+
+.nav-section {
+  margin-top: 25px;
+}
+
+.nav-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(196, 189, 189, 0), rgba(196, 189, 189, 0.75), rgba(196, 189, 189, 0));
+}
+
+#special-background {
+  background: linear-gradient(to top,#F6F5F6, #FBFAFB);
+  padding: 8px
+}
+
+input[type=text] {
+  width: 350px;
+  margin-top: -1px;
+  border-radius: 2px;
+  border: 1px solid #aaa;
+  font-size: 1em;
+
+}
+
+#submit {
+  position: absolute;
+  right: 18px;
+  top: 58px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background: white;
+}
+
+.fa-search {
+  color: #333;
+}
+
+.paragraph-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wiki-text {
+  font-size: .8em;
+  margin-bottom: 7px;
+}
+
+.cat-text {
+  padding-left: 1.6em;
+  margin-bottom: .75em;
+  font-style: italic;
+  font-size: 92%;
+}
+
+p {
+  line-height: 1.6;
+  font-size: .9em;
+  margin: 9px 0px;
+}
+table {
+  width: 100%;
+}
+
+.table-div
+{
+  position: relative;
+  float: right;
+  border: 1px solid #a2a9b1;
+  border-spacing: 3px;
+  background-color: #f8f9fa;
+  color: black;
+  padding: .25em;
+  font-size: 88%;
+  line-height: 1.5em;
+  text-align: center;
+  margin: 14px;
+}
+figcaption {
+  font-size: 12px;
+}
+.table-header {
+  background-color: rgb(235,235,210);
+  font-weight: bold; 
+}
+td {
+  margin: 10px;
+  padding: 2px;
+}
+
+.align-left {
+  text-align: left;
+}
